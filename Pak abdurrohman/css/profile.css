@@ -1,20 +1,7 @@
 * {
-    font-family:  'Montserrat, sans-serif';
-  }
-
-.red {
-    background: #3D0000;
-    color: #f6f6f6;
-    padding: 0px;
-    display: inline;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.red1 {
-    background:#950101;
-    color: rgb(231, 231, 231);
-    padding: 0px;
-    display: inline;
-}
 
 .navbar {
     background: linear-gradient(45deg, #FF0000, #000000);
@@ -40,5 +27,101 @@
   }
 
   .bay {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
+
+  footer a {
+    color: white;
+  }
+
+.remove-bullet ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.custom-content {
+  flex: 1;
+  max-width: 100%;
+  margin-right: 15%; /* Atur jarak antara konten utama dan daftar pos */
+
+}
+
+.custom-post-list {
+  flex: 1;
+  max-width: 100%;
+  margin-left:auto; /* Atur jarak antara konten utama dan daftar pos */
+
+}
+
+/* Hover effect */
+.btn-danger {
+  background-image: linear-gradient(to right, #ccb533, #ff7b00); /* Neon green gradient on hover */
+}
+
+.not-home {
+  background: linear-gradient( rgba(255, 254, 254, 0.7),rgb(252, 252, 252)), url(../assets/metafora\ core.png);
+  background-position: center;
+  background-size: 1%;
+}
+
+
+.banner-text {
+  font-size: 36px;
+  color: #0c0000;
+  padding-left: 4%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-container h1 {
+  color: rgb(31, 27, 27);
+
+}
+
+.text-container p {
+  color: rgb(43, 38, 38);
+  font-family: 'poppins';
+}
+
+
+.bayi {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+
+.bayi.img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    background-size: 5%;
+  }
+
+  .banner-text {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .text-container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .banner-text,
+  .text-container h1,
+  .text-container p {
+    font-size: 24px;
+  }
+
+
+
+

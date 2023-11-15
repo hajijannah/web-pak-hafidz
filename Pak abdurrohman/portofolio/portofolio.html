@@ -6,96 +6,185 @@
 
     <!-- LINK CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
     <!-- CSS MURNI -->
     <link rel="stylesheet" href="../css/portofolio.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/mahafidz.png">
 
     <title>PORTOFOLIO | MAHAFIDZ</title>
   </head>
-  <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 30px">
-        <span class="text-dark"> MAHAFIDZ </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon bg-light"></span>
+  <div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 30px">
+          <span class="text-dark"> MAHAFIDZ </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/profile/profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/portofolio/portofolio.html">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/news/news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/inspirasi/inspirasi.html">Inspirasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/video/video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/client/client.html">Client</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel" data-aos="flip-up" >
+      <div class="carousel-indicators" >
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item active " >
+          <div class="carousel-container">
+            <div class="p-3 border bg-dark text-center" >
+              <img src="../assets/logo-aeropro.png" alt="Gambar 1" >
+              <div >
+                <h2 class="text-light">PT Elevasi Teknologi Aeronautika Nusantara</h2>
+                <a href="https://inaero.id/" class="btn btn-danger">Kunjungi Web industri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <div class="carousel-container" >
+            <div class="p-3 border bg-light text-center">
+              <img src="../assets/logo-arsifab.png" alt="Gambar 2">
+              <div>
+                <h2 class="text-dark">PT KIYA SINERGI ASIA</h2>
+                <a href="https://idmetafora.com/works/arsifab/" class="btn btn-danger">Kunjungi Web industri</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/profile/profile.html">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/portofolio/portofolio.html">Portofolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/news/news.html">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/inspirasi/inspirasi.html">Inspirasi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/video/video.html">Video</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/client/client.html">Client</a>
-          </li>
-        </ul>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
 
-<!--PADDING-->
-<div class="container px-4">
-  <div class="row gx-5">
-    <div class="col md-6">
-      <div class="p-3 border bg-dark text-center">
-        <img src="../assets/logo-aeropro.png" alt="Gambar 1">
-        <div>
-          <h2 class="text-light">PT Elevasi Teknologi Aeronautika Nusantara</h2>
-          <a href="https://inaero.id/" class="btn btn-danger"> Kunjungi Web industri</a>
 
+
+        <!-- CAROUSEL -->
+        <div id="carouselExampleDark1" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="flip-down">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-container">
+                <div class="p-3 border bg-dark text-center">
+                  <img src="../assets/albasia-batang-logo-normal-white.jpg" alt="Gambar 1">
+                  <div>
+                    <h2 class="text-light">PT Albasia</h2>
+                    <a href="https://albasiabatang.com/" class="btn btn-danger">Kunjungi Web industri</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-container">
+                <div class="p-3 border bg-light text-center">
+                  <img src="../assets/speequal.jpg" alt="Gambar 2">
+                  <div>
+                    <h2 class="text-dark">SPEEQUAL</h2>
+                    <a href="https://speequal.com/" class="btn btn-danger">Kunjungi Web industri</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-justify pt-4 pb-2 background-transparan">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-md-start text-justify">
+            <h5>About Us.</h5>
+            <p>MAHAFIDZ is IT Solution Company, our main business is in web design & development. We also support our client in digital marketing. MAHAFIDZ Indonesia Teknologi (mahafidz) &copy; 2014-2023</p>
+          </div>
+          <div class="col-md-3 text-md-start text-justify">
+            <h5>Our Company</h5>
+            <div class="remove-bullet pb-3">
+              <ul>
+                <a href="#"><li>Insight About Us</li></a>
+                <a href="https://bit.ly/46gaPmU"><li>Telephone: +62 896 6423 0232</li></a>
+                <a href="mailto:info@mahafidz.com"><li>Email: info@mahafidz.com</li></a>
+              </ul>
+            </div>
+            <h5>Office Address</h5>
+            <a href="https://bit.ly/476zOds"> <p>Jl. Damai No.7C, Palagan, Sleman, Yogyakarta.</p></a>
+          </div>
+          <div class="col-md-3 text-md-start text-justify pb-2">
+            <h5>Group Company</h5>
+            <a href="#"> <img style="width: 160px" src="../assets/metafora core.png" class="pb-2" /></a>
+            <a href="#"> <img style="width: 180px" src="../assets/metafora land.png" /></a>
+          </div>
+          <div class="col-md-3 text-md-start text-md-start text-center">
+            <h6>Temukan kami di media sosial:</h6>
+            <a href="https://www.facebook.com/al.hafidz.79" target="_blank" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/IDMETAFORA" class="text-white mx-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com/mahafidzcom/" target="_blank" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/m-abdurrohman-alhafidz-1b96ab63/" target="_blank" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="pt-3 text-center">
+          <p>
+            &copy; Copyright 2023 <a href="#"><strong>MAHAFIDZ</strong></a> All Rights Reserved
+          </p>
         </div>
       </div>
-    </div>
-    <div class="col md-6">
-      <div class="p-3 border bg-light text-center">
-        <img src="../assets/inaero.id-aeropro-pesawat-tanpa-awak-yogyakarta.jpg" alt="Gambar 2">
-        <div></div>
-      </div>
-    </div>
-  </div>
-</div>
+    </footer>
 
-<div class="container px-4">
-  <div class="row gx-5">
-    <div class="col md-6">
-      <div class="p-3 border bg-dark text-center">
-        <img src="../assets/logo-arsifab.png" alt="Gambar 1">
-        <div>
-          <h2 class="text-light">PT KIYA SINERGI ASIA</h2>
-          <a href="https://idmetafora.com/works/arsifab/" class="btn btn-danger">Kunjungi Web industri</a>
-
-        </div>
-      </div>
-    </div>
-    <div class="col md-6">
-      <div class="p-3 border bg-light text-center">
-        <img src="../assets/tentang-arsifab-platform-pesan-rumah-online-indonesia-raya.jpg" alt="Gambar 2">
-        <div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>

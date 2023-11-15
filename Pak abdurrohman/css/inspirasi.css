@@ -1,6 +1,7 @@
 * {
-    font-family:  'Montserrat, sans-serif';
-  }
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .navbar {
     background: linear-gradient(45deg, #FF0000, #000000);
@@ -24,3 +25,17 @@
   .nav-link.active a {
     color: #FFFFFF; /* Ganti dengan warna teks yang sesuai */
   }
+
+  footer a {
+    color: white;
+  }
+.remove-bullet ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hover effect */
+.btn-danger {
+  background-image: linear-gradient(to right, #ccb533, #ff7b00); /* Neon green gradient on hover */
+}
