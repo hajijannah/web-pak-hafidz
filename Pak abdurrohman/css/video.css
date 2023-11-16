@@ -4,20 +4,27 @@
 
 
 .navbar {
-    background: linear-gradient(45deg, #FF0000, #000000);
-  }
+  background: linear-gradient(45deg, #000000 ,#ed0c0cc3,#4d3636c3);
+  width: 100%;
+  max-resolution: 20px auto 0;
+  display:flex;
+  text-align: center;
+  position: sticky;
+  z-index: 2;
+  padding-left: 45%;
+}
 
-  .navbar-brand {
-    background: -webkit-linear-gradient(45deg, #FF0000, #000000);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+.navbar-brand {
+flex-basis: 15%;
+}
 
-  .navbar-nav .nav-link {
-    color: white !important;
-  }
+.navbar-nav .nav-link {
+  color: white !important;
+  width: fit-content;
+}
 
   .nav-link.active {
+    width: fit-content;
     background-color: #FF0000; /* Ganti dengan warna latar belakang yang Anda inginkan */
   }
   
@@ -45,4 +52,41 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+
+
+  .navbar {
+    background: linear-gradient(45deg, #000000 ,#ed0c0cc3,#4d3636c3);
+    width: 100%;
+    max-resolution: 20px auto 0;
+    display:flex;
+    text-align: center;
+    position: sticky;
+    z-index: 2;
+    padding-left: 35%;
+  }
+  
+  .navbar-brand {
+  flex-basis: 15%;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  /* Adjust individual nav items if needed */
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-around; /* Menyusun item navbar secara merata */
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-right: 90%; /* Menghapus margin kanan pada item navbar */
+    margin-bottom: ;
+  }
+
 }

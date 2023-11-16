@@ -4,39 +4,78 @@
 
 .main {
   height: max-content;
-  background: linear-gradient(rgb(0, 0, 0), #fdfdfd);
+  background: url(../assets/person-using-tablet.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  position: cover;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* Styles untuk overlay pada latar belakang */
+.main {
   position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna overlay */
+}
+
+/* Pastikan konten di atas overlay */
+.main > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+.logo-img {
+  border-radius: 50%;
+  border: 2px solid #fff; /* Jika ingin menambahkan garis tepi pada gambar */
+  padding: 3px; /* Jika ingin menambahkan ruang antara gambar dan garis tepi */
 }
 
 
 .navbar {
-  background: linear-gradient(45deg, #FF0000, #000000);
+  background: linear-gradient(45deg, #000000 ,#ed0c0cc3,#4d3636c3);
+  width: 100%;
+  max-resolution: 20px auto 0;
+  display:flex;
+  text-align: center;
+  position: sticky;
+  z-index: 2;
+  padding-left: 45%;
 }
 
-  .navbar-brand {
-    background: -webkit-linear-gradient(45deg, #FF0000, #000000);
-    -webkit-background-clip: text;
-    color: white;
-  }
+.navbar-brand {
+flex-basis: 15%;
+}
 
-  .navbar-nav .nav-link {
-    color: white !important;
-  }
+.navbar-nav .nav-link {
+  color: white !important;
+  width: fit-content;
+}
 
+  
   .nav-link.active {
+    width: fit-content;
     background-color: #FF0000; /* Ganti dengan warna latar belakang yang Anda inginkan */
   }
   
   /* Gaya untuk teks dalam item navbar yang aktif */
   .nav-link.active a {
     color: #FFFFFF; /* Ganti dengan warna teks yang sesuai */
-  }
-
-  footer a {
-    color: white;
   }
 
 .remove-bullet ul {
@@ -50,7 +89,7 @@
 }
 
 .home-header {
-  background: linear-gradient( rgba(255, 254, 254, 0.7),rgb(252, 252, 252)), url(../assets/metafora\ core.png);
+  background: linear-gradient( rgba(37, 36, 36, 0.7),rgb(252, 252, 252))
   background-position: center;
   background-size: 1%;
 }
@@ -64,12 +103,25 @@
 }
 
 .text-container h1 {
-  color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .text-container p {
-  color: rgb(16, 11, 11);
+  color: rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.container h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container p {
+  color: rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 .bayi {
   display: flex;
@@ -85,6 +137,12 @@
   max-width: 200px;
   height: auto;
 }
+
+footer a {
+  color: white;
+}
+
+
 
 @media (max-width: 768px) {
   .home-header {
@@ -106,4 +164,50 @@
   .text-container p {
     font-size: 24px;
   }
+
+  .navbar {
+    background: linear-gradient(45deg, #000000 ,#ed0c0cc3,#4d3636c3);
+    width: 100%;
+    max-resolution: 20px auto 0;
+    display:flex;
+    text-align: center;
+    position: sticky;
+    z-index: 2;
+    padding-left: 35%;
+  }
+  
+  .navbar-brand {
+  flex-basis: 15%;
+  }
+
+  .main {
+    height: max-content;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: cover;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  /* Adjust individual nav items if needed */
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-around; /* Menyusun item navbar secara merata */
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-right: 90%; 
+    margin-bottom: ;
+  }
+
+
 }
+
+
